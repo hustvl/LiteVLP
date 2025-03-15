@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Towards Fast, Memory-based and Data-Efficient Vision-Language Policy">
+    <meta name="keywords" content=" Vision-Language robot policy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Towards Fast, Memory-based and Data-Efficient Vision-Language Policy</title>
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+  
+      gtag('config', 'G-PYVRSFMDRL');
+    </script>
+  
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./assets/icon/agv-robot.png">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    
+  </head>
+  
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <style>
+                .publication-title {
+                    font-size: 2.6em; /* change title font size */
+                }
+              </style>
+              <h1 class="title is-0 publication-title">Towards Fast, Memory-based and Data-Efficient Vision-Language Policy</h1>
+  
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://github.com/RogerRafa/">Haoxuan Li</a><sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
+
+                <span class="author-block">
+                  <a href="https://github.com/Yansixu/">Sixu Yan</a><sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
+                
+                  <span class="author-block">
+                    <a>Yuhan Li</a><sup>1</sup>&nbsp;&nbsp;&nbsp;</span>
+  
+                <span class="author-block">
+                  <a href="https://xwcv.github.io/">Xinggang Wang</a><sup>1,✉️</sup>&nbsp;&nbsp;&nbsp;</span> 
+  
+                <span class="author-block">
+                </span>
+  
+                <p style="font-size: 0.9em; padding: 0.5em 0 0 0;">✉️ indicates corresponding author</p>
+  
+                <span class="author-block"><sup>1 </sup>School of Electronic Information and Communications, Huazhong University of Science and Technology</span>                
+              </div>
+              
+              <!-- Links Section -->
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Paper Link -->
+                  <span class="link-block">
+                    <a href="assets/paper/Towards Fast, Memory-based and Data-Efficient Vision-Language Policy.pdf" 
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  
+                  <!-- Arxiv Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2503.10322"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                  
+                  <!-- Code Link -->
+                  <span class="link-block">
+                      <a href=""
+                        class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (Coming Soon)</span>
+                    </a>
+                  </span>
+                </div>
+              </div> 
+              <!--/ Links Section -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  
+  <!-- <hr style="background-color:#f5f5f5; border:none; display:block; width: auto; height:2px; margin:1.5rem 0"> -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Vision Language Models (VLMs) pretrained on Internetscale vision-language data have demonstrated the potential to transfer their knowledge to robotic learning. However, the existing paradigm encounters three critical challenges: (1) expensive inference cost resulting from largescale model parameters, (2) frequent domain shifts caused by mismatched data modalities, and (3) limited capacity to handle past or future experiences. In this work, we propose <b>LiteVLP</b>, a lightweight, memory-based, and general-purpose vision-language policy generation model. LiteVLP is built upon a pre-trained 1B-parameter VLM and fine-tuned on a tiny-scale and conversation-style robotic dataset. Through extensive experiments, we demonstrate that LiteVLP outperforms state-of-the-art vision-language policy on VIMA-Bench, with minimal training time. Furthermore, LiteVLP exhibits superior inference speed while maintaining exceptional high accuracy. In long-horizon manipulation tasks, LiteVLP also shows remarkable memory ability, outperforming the best-performing baseline model by 18.8%. These results highlight LiteVLP as a promising model to integrating the intelligence of VLMs into robotic learning.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+  
+      <!-- Method Overview. -->
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <center>
+            <video id="teaser" autoplay muted loop playsinline >
+              <source src="assets/videos/gif.mp4" type="video/mp4">
+            </video>
+          </center>
+          <div class="content has-text-justified">      
+          </div>         
+        </div>
+      </div> -->
+      <!--/ Method Overview. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Challenges in Vision Language Policies -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+        <h2 class="title is-3">Challenges in Vision Language Policies</h2>
+        </div>
+      </div>
+      <p>
+        Integrating pre-trained Large Language Models (LLMs) and VLMs with low-level robotic policies has made significant progress. However, there are three key challenges in existing models. First, fine-tuning pre-trained LLMs and VLMs with robotic data often encounters frequent domin shifts due to the substantial differences between the pre-training web dataset and the fine-tuning robotic dataset. Second, current models suffer from insufficient memory for future or past experiences, making them achieve poor performance for long-horizon manipulation. Third, the large number of model parameters in the backbone network leads to a high computational time, which limits their real-world deployment.
+      </p>
+    </div>
+    <!--/ Challenges in Vision Language Policies -->
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Framework -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+        <h2 class="title is-3">Framework</h2>
+        </div>
+      </div>
+      <p>
+        The LiteVLP framework initiates with multi-observation compression and then projects the image features into the same dimensional space as the text features. Subsequently, the image tokens are interleaved with text tokens and processed by a large language model to generate a text output that includes the end-effector's action. Of note, during the fine-tuning stage, the parameters of ViT are frozen, while the length embedding, the MLP projector and the large language model are trained.
+      </p>
+      <br>
+      <img src="assets/figure/Fig2_model_architecture.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+
+    </div>
+    <!--/ Framework -->
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- VIMA-Bench Results -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+        <h2 class="title is-3">VIMA-Bench Results</h2>
+        </div>
+      </div>
+      <p>
+        We evaluate our method on VIMA-Bench and compare its performance against other models trained on datasets of different sizes. The results are shown in the following table. We demonstrate that LiteVLP achieves highly competitive performance, achieving a success rate of 84.2% on L1, 78.1% on L2, and 75.4% on L3, using only 1.2% of the VIMA dataset. This performance is comparable to the state-of-the-art model VIMA, which achieves 81.5% on L1, 81.5% on L2, and 78.7% on L3 when trained on the full dataset. Additionally, our model significantly outperforms other VLMs fine-tuned on our small dataset, such as LLaRA-7B and Mipha-3B. These results successfully indicate that LiteVLP can rapidly adapt to robotic manipulation and demonstrate highly competitive performance when fine-tuned with visuomotor instruction in a small robotic dataset. Note that the suffix '-m' in model names denotes multi-image input, while '-s' indicates single-image input.
+      </p>
+      <br>
+      <img src="assets/figure/baseline.png" style="width:50%; margin:auto; display:block;">
+  
+    </div>
+    <!--/ VIMA-Bench Results -->
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!--Long-horizon Manipulation Performance -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+        <h2 class="title is-3">Long-horizon Manipulation Performance</h2>
+        </div>
+      </div>
+      <p>
+        In long horizon manipulation tasks, LiteVLP-m significantly outperforms other baseline models. We refer to CoTDiffusion to select three representative long-horizon manipulation tasks in VIMA-Bench —visual rearrangement, visual reasoning, and visual constraints. CoTDiffusion is a model specifically designed to improve performance in long-horizon manipulation tasks. However, our LiteVLP-m demonstrates superior performance in long-horizon manipulation tasks, achieving an average improvement of 18.8% over CoTDiffusion in three types of tasks. The effectiveness of our model can be attributed to the sufficient memory for past and future experiences, making it more capable of long-horizon manipulation.
+      </p>
+      <br>
+      <img src="assets/figure/long-horizon.png" style="width:50%; margin:auto; display:block;">
+    
+    </div>
+    <!--/ Long-horizon Manipulation Performance -->
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!--Efficiency Analysis -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+        <h2 class="title is-3">Efficiency Analysis</h2>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-4">Training Time</h3>
+        </div>
+      </div>
+      <div class="column">
+        <p>
+          Our method demonstrate a significant advantage on training efficiency. Specifically, we achieve an average success rate of 80.7% in just 6.1 hours of training, using 4 NVIDIA RTX 3090 GPUs. In comparison, VIMA, which is trained on 8 NVIDIA V100 GPUs, takes 24 hours and achieves an average success rate of 80.6%, while LLaRA-7B, trained on 4 NVIDIA RTX 3090 GPUs, requires 21 hours and achieves 74% on average. These results highlight the efficiency of our approach, which not only reduces training time significantly by 17.9 hours compared to VIMA and 14.9 hours compared to LLaRA-7B but also performs excellently even on less powerful GPU setups.
+        </p>
+      </div>
+      <br>
+      <img src="assets/figure/train_time.png" style="width:55%; margin:auto; display:block;">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="title is-4">Inference Speed</h3>
+        </div>
+      </div>
+      <div class="column">
+        <p>
+          With a lightweight design, our model not only significantly reduces training time, but also accelerates inference speed, demonstrating a huge advantage on low latency. We fairly compare our LiteVLP-m with Mipha-3B and LLaRA-7B on VIMA-Bench tasks, with the same NVIDIA RTX 3090. As shown in the following figure, our LiteVLP-m achieves a superior performance with 6.8 times lower inference latency than LLaRA. This result can be attributed to two main factors: the smaller size of our model, and the effectiveness of our MOC module in shortening the input sequence.
+        </p>
+      </div>
+      <br>
+      <img src="assets/figure/inference_speed.png" style="width:48%; margin:auto; display:block;">
+    </div>
+    <!--/ Efficiency Analysis -->
+  </section>
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code class="language-bibtex">
+        @article{litevlp2025li,
+          title={Towards Fast, Memory-based and Data-Efficient Vision-Language Policy}, 
+          author={Haoxuan Li and Sixu Yan and Yuhan Li and Xinggang Wang},
+          journal={arXiv preprint arXiv:2503.10322},
+          year={2025}
+        }
+      </code></pre>
+    </div>
+  </section>
+  
+  
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              Website template adapted from <a
+                href="https://m2diffuser.github.io/">M2Diffuser</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  
+  </body>
+  </html>
